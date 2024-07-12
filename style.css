@@ -1,0 +1,54 @@
+@font-face { font-family: pixel; src: url("Pixellettersfull-BnJ5.ttf"); }
+@font-face { font-family: epic; src: url("Ka Blam.ttf"); }
+
+#start{
+    width: 300px;
+    height: 200px;
+    position: fixed;
+    top: 600px;
+    left: 800px;
+    background-color: white;
+    border: 2px solid black;
+    font-size: 40px;
+    font-family: pixel;
+    transition-duration: 0.4s;
+
+    
+}
+
+#start:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+#rock{
+    opacity: 0;
+}
+
+#paper{
+    opacity: 0;
+}
+
+#scissors{
+    opacity: 0;
+}
+
+#title{
+    font-size: 60px;
+    font-family: pixel;
+    color: black;
+    position: fixed;
+    top: 100px;
+    left: 690px;
+}
+#mania{
+     font-size: 80px;
+    font-family: pixel;
+    color: black;
+    position: fixed;
+    top: 170px;
+    left: 840px;
+}
+

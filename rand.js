@@ -32,23 +32,28 @@ function getRandomInt(min, max) {
 
   function sci(){
 playerscissors = true
-console.log("playersci")
+
   }
   function roc() {
     playerrock = true
-    console.log("playerrock")
+    
   }
   function pap(){
     playerpaper = true
-console.log("playerpap")
+
+
+
+
 
 if(rock == true && playerscissors == true){
     console.log("you lose")
+
     rock = false
     playerscissors = false
 }
 if(paper == true && playerscissors == true){
     console.log("you win")
+    
     paper = false
     playerscissors = false
 }
@@ -60,31 +65,37 @@ if(scissors == true && playerscissors == true){
 }
 if(paper == true && playerrock == true){
     console.log("you lose")
+
     paper = false
     playerrock = false
 }
 if(rock == true && playerrock == true){
     console.log("tie")
+
     rock = false
     playerrock = false
 }
 if(scissors == true && playerrock == true){
     console.log("you win")
+
     scissors = false
     playerrock = false
 }
 if(rock == true && playerpaper == true){
     console.log("you win")
+
     rock = false
     playerpaper = false
 }
 if(paper == true && playerpaper == true){
     console.log("tie")
+
     paper = false
     playerpaper = false
 }
 if(scissors == true && playerpaper == true){
     console.log("you lose")
+
     scissors = false
     playerpaper = false
 }
