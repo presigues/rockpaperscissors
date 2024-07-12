@@ -87,3 +87,10 @@
     background-color: black;
     color: white;
 }
+
+#tutorial{
+    background-color: black;
+    width: 2000px;
+    height: 2000px;
+    display: none;
+}
