@@ -100,8 +100,11 @@
 #tutorial{
     background-color: black;
     width: 2000px;
-    height: 2000px;
- display: none;
+    height: 1000px;
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
     
 }
 
