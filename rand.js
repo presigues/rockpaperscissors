@@ -1,8 +1,9 @@
-const aichoice = "unknown";
 
-const playerchoice = "unknown";
-
-   function start(){
+aichoice;
+playerchoice;
+   
+   
+function start(){
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -33,14 +34,17 @@ function getRandomInt(min, max) {
 function roc(){
 playerchoice="rock";
 console.log("player chose rock");
+start();
 }
 function pap() {
-    playerchoice="paper";
-console.log("player chose paper");  
+playerchoice="paper";
+console.log("player chose paper"); 
+start(); 
 }
 function sci(){
 playerchoice="scissors";
 console.log("player chose scissors");
+start();
 
 }
 
