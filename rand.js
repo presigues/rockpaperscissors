@@ -46,14 +46,20 @@ function match(){
             if (aichoice=="rock"){ // tie
                 console.log("tie");
                 document.getElementById("tie").style.opacity = "1";
+                document.getElementById("bottie").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
                 }
             if(aichoice=="paper"){// lose
                 console.log("AI wins");
                 document.getElementById("aiwin").style.opacity = "1";
+                document.getElementById("botwin").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
             } 
            if(aichoice=="scissors"){ // win
                 console.log("Player wins"); 
                 document.getElementById("youwin").style.opacity = "1";
+                document.getElementById("botlose").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
             }
 
         }
@@ -63,14 +69,20 @@ function match(){
             if (aichoice=="rock"){ // tie
                 console.log("player wins");
                 document.getElementById("youwin").style.opacity = "1";
+                document.getElementById("botlose").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
                 }
             if(aichoice=="paper"){// lose
                 console.log("tie");
                 document.getElementById("tie").style.opacity = "1";
+                document.getElementById("bottie").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
             } 
            if(aichoice=="scissors"){ // win
                 console.log("ai wins"); 
                 document.getElementById("aiwin").style.opacity = "1";
+                document.getElementById("botwin").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
             }
     }
 
@@ -80,14 +92,20 @@ function match(){
             if (aichoice=="rock"){ // tie
                 console.log("ai wins");
                 document.getElementById("aiwin").style.opacity = "1";
+                document.getElementById("botwin").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
                 }
             if(aichoice=="paper"){// lose
                 console.log("player wins");
                 document.getElementById("youwin").style.opacity = "1";
+                document.getElementById("botlose").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
             } 
            if(aichoice=="scissors"){ // win
                 console.log("tie"); 
                 document.getElementById("tie").style.opacity = "1";
+                document.getElementById("bottie").style.opacity= "1";
+                document.getElementById("bot").style.opacity = "0";
             }
         }
 
@@ -118,6 +136,11 @@ function reseting(){
     document.getElementById("selecttitle").style.display = "block";
     playerchoice = "";
     aichoice = "";
+
+    document.getElementById("botlose").style.opacity= "0";
+    document.getElementById("botwin").style.opacity= "0";
+    document.getElementById("bottie").style.opacity= "0";
+    document.getElementById("bot").style.opacity = "1";
 
 
 

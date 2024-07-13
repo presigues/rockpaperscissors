@@ -177,6 +177,34 @@
     
 }
 
+#botwin{
+    width: 150px;
+    position: fixed;
+    right: 80px;
+    top: 40px;
+    opacity: 0;
+
+    
+}
+#botlose{
+    width: 150px;
+    position: fixed;
+    right: 80px;
+    top: 40px;
+    opacity: 0;
+
+    
+}
+#bottie{
+    width: 150px;
+    position: fixed;
+    right: 80px;
+    top: 40px;
+    opacity: 0;
+
+    
+}
+
 #botname{
     width: 150px;
     position: fixed;
