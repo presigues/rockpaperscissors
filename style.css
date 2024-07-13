@@ -267,6 +267,9 @@
 
 #aiwin{
     color:aliceblue;
+    position: fixed;
+    top: 300px;
+    left: 1000px;
     font-family: pixel;
     font-size: 60px;
     opacity: 0;
@@ -274,12 +277,18 @@
 
 #youwin{
     color:aliceblue;
+    position: fixed;
+    top: 300px;
+    left: 1000px;
     font-family: pixel;
     font-size: 60px;
     opacity: 0;
 }
 #tie{
-    color:aliceblue;
+    color:rgb(255, 255, 255);
+    position: fixed;
+    top: 300px;
+    left: 1000px;
     font-family: pixel;
     font-size: 60px;
     opacity: 0;

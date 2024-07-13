@@ -37,13 +37,15 @@ function match(){
 
             case aichoice="rock": // tie
                 console.log("tie");
-                document.getElementById("tie").style.opacity = 1
+                document.getElementById("tie").style.opacity = "1";
                 break;
             case aichoice="paper": // lose
                 console.log("AI wins");
+                document.getElementById("aiwin").style.opacity = "1";
                 break;
             case aichoice="scissors": // win
                 console.log("Player wins"); 
+                document.getElementById("youwin").style.opacity = "1";
                 break;
         break;
 
@@ -51,13 +53,15 @@ function match(){
 
             case aichoice="paper": // tie
                 console.log("tie");
-                document.getElementById("tie").style.opacity = 1
+                document.getElementById("tie").style.opacity = "1";
                 break;
             case aichoice="scissors": // lose
                 console.log("AI wins");
+                document.getElementById("aiwin").style.opacity = "1";
                 break;
             case aichoice="rock": // win
                 console.log("Player wins"); 
+                document.getElementById("youwin").style.opacity = "1";
                 break;
         break;
 
@@ -65,14 +69,15 @@ function match(){
 
             case aichoice="scissors": // tie
                 console.log("tie");
-                document.getElementById("tie").style.opacity = 1
+                document.getElementById("tie").style.opacity = "1";
                
                 break;
             case aichoice="rock": // lose
-                console.log("AI wins");
+            document.getElementById("aiwin").style.opacity = "1";
                 break;
             case aichoice="paper": // win
                 console.log("Player wins"); 
+                document.getElementById("youwin").style.opacity = "1";
                 break;
         break;
 
