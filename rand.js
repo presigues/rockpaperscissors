@@ -30,6 +30,10 @@ function getRandomInt(min, max) {
 
 }
 
+function theend(){
+    document.getElementById("end").style.display = "block"
+}
+
 function match(){
 
     switch(playerchoice, aichoice){
@@ -85,9 +89,16 @@ function match(){
 
 }
 
-function winner(){
+function gameover(){
+
+    document.getElementById("paperplayer").style.display = "none";
+    document.getElementById("rockplayer").style.display = "none";
+    document.getElementById("scissorplayer").style.display = "none";
+    document.getElementById("selecttitle").style.display = "none";
     
+
 }
+
 
 
 function roc(){
@@ -95,19 +106,24 @@ playerchoice="rock";
 console.log("player chose rock");
 start();
 match();
+gameover();
+theend();
 }
 function pap() {
 playerchoice="paper";
 console.log("player chose paper"); 
 start(); 
 match();
+gameover();
+theend();
 }
 function sci(){
 playerchoice="scissors";
 console.log("player chose scissors");
 start();
 match();
-
+gameover();
+theend();
 }
 
 

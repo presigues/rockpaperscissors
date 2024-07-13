@@ -16,3 +16,5 @@ function imready(){
     document.getElementById("game").style.display = "block"
     
 }
+
+
