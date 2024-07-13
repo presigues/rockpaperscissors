@@ -1,12 +1,8 @@
-let rock = false
-let paper = false
-let scissors = false
+const aichoice = "unknown";
 
-let playerrock = false
-let playerpaper = false
-let playerscissors = false
+const playerchoice = "unknown";
 
-function start(){
+   function start(){
 
 function getRandomInt(min, max) {
     min = Math.ceil(min);
@@ -16,96 +12,39 @@ function getRandomInt(min, max) {
 
   let randomInt = getRandomInt(1, 3);
   
-  if(randomInt == 1){
-    rock = true
-    console.log("rock")
-  }
-  if(randomInt == 2){
-    paper = true
-    console.log("paper")
-  }
-  if(randomInt == 3){
-    scissors = true
-    console.log("scissors")
-  }
-}
+ switch(randomInt){
+    case 1:
+    aichoice="rock";
+    console.log("ai chose rock");
+    break;
+    case 2:
+    aichoice="paper";
+    console.log("ai chose paper");
+    break;
+    case 3:
+    aichoice="scissors";
+    console.log("ai chose scissors");
+    break;
+ }
 
-  function sci(){
-playerscissors = true
-
-  }
-  function roc() {
-    playerrock = true
-    
-  }
-  function pap(){
-    playerpaper = true
-
-
-
-
-
-if(rock == true && playerscissors == true){
-    console.log("you lose")
-
-    rock = false
-    playerscissors = false
-}
-if(paper == true && playerscissors == true){
-    console.log("you win")
-    
-    paper = false
-    playerscissors = false
-}
-if(scissors == true && playerscissors == true){
-    console.log("tie")
-
-    scissors = false
-    playerscissors = false
-}
-if(paper == true && playerrock == true){
-    console.log("you lose")
-
-    paper = false
-    playerrock = false
-}
-if(rock == true && playerrock == true){
-    console.log("tie")
-
-    rock = false
-    playerrock = false
-}
-if(scissors == true && playerrock == true){
-    console.log("you win")
-
-    scissors = false
-    playerrock = false
-}
-if(rock == true && playerpaper == true){
-    console.log("you win")
-
-    rock = false
-    playerpaper = false
-}
-if(paper == true && playerpaper == true){
-    console.log("tie")
-
-    paper = false
-    playerpaper = false
-}
-if(scissors == true && playerpaper == true){
-    console.log("you lose")
-
-    scissors = false
-    playerpaper = false
 }
 
 
+function roc(){
+playerchoice="rock";
+console.log("player chose rock");
+}
+function pap() {
+    playerchoice="paper";
+console.log("player chose paper");  
+}
+function sci(){
+playerchoice="scissors";
+console.log("player chose scissors");
 
+}
 
-
-
-  }
+   
 
 
   // paper 1 beats rock 3
