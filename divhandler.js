@@ -10,3 +10,8 @@ function openstart(){
     
 }
 
+
+function imready(){
+    document.getElementById("maintutorial").style.display = "none";
+    document.getElementById("game").style.display = "block"
+}
