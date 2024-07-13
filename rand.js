@@ -1,6 +1,9 @@
 
 aichoice;
 playerchoice;
+
+aiscore = 0;
+playerscore = 0;
    
    
 function start(){
@@ -36,58 +39,61 @@ function theend(){
 
 function match(){
 
-    switch(playerchoice, aichoice){
-        case playerchoice="rock":
+   
 
-            case aichoice="rock": // tie
+        if (playerchoice=="rock"){
+
+            if (aichoice=="rock"){ // tie
                 console.log("tie");
                 document.getElementById("tie").style.opacity = "1";
-                break;
-            case aichoice="paper": // lose
+                }
+            if(aichoice=="paper"){// lose
                 console.log("AI wins");
                 document.getElementById("aiwin").style.opacity = "1";
-                break;
-            case aichoice="scissors": // win
+            } 
+           if(aichoice=="scissors"){ // win
                 console.log("Player wins"); 
                 document.getElementById("youwin").style.opacity = "1";
-                break;
-        break;
+            }
 
-        case playerchoice="paper":
+        }
 
-            case aichoice="paper": // tie
+        if(playerchoice=="paper"){
+
+            if (aichoice=="rock"){ // tie
+                console.log("player wins");
+                document.getElementById("youwin").style.opacity = "1";
+                }
+            if(aichoice=="paper"){// lose
                 console.log("tie");
                 document.getElementById("tie").style.opacity = "1";
-                break;
-            case aichoice="scissors": // lose
-                console.log("AI wins");
+            } 
+           if(aichoice=="scissors"){ // win
+                console.log("ai wins"); 
                 document.getElementById("aiwin").style.opacity = "1";
-                break;
-            case aichoice="rock": // win
-                console.log("Player wins"); 
+            }
+    }
+
+
+        if(playerchoice=="scissors"){
+
+            if (aichoice=="rock"){ // tie
+                console.log("ai wins");
+                document.getElementById("aiwin").style.opacity = "1";
+                }
+            if(aichoice=="paper"){// lose
+                console.log("player wins");
                 document.getElementById("youwin").style.opacity = "1";
-                break;
-        break;
-
-        case playerchoice="scissors":
-
-            case aichoice="scissors": // tie
-                console.log("tie");
+            } 
+           if(aichoice=="scissors"){ // win
+                console.log("tie"); 
                 document.getElementById("tie").style.opacity = "1";
-               
-                break;
-            case aichoice="rock": // lose
-            document.getElementById("aiwin").style.opacity = "1";
-                break;
-            case aichoice="paper": // win
-                console.log("Player wins"); 
-                document.getElementById("youwin").style.opacity = "1";
-                break;
-        break;
+            }
+        }
 
     }
 
-}
+
 
 function gameover(){
 
@@ -96,6 +102,24 @@ function gameover(){
     document.getElementById("scissorplayer").style.display = "none";
     document.getElementById("selecttitle").style.display = "none";
     
+
+}
+
+function reseting(){
+    document.getElementById("youwin").style.opacity = "0";
+    document.getElementById("aiwin").style.opacity = "0";
+    document.getElementById("tie").style.opacity = "0";
+
+    document.getElementById("end").style.display = "none"
+
+    document.getElementById("paperplayer").style.display = "block";
+    document.getElementById("rockplayer").style.display = "block";
+    document.getElementById("scissorplayer").style.display = "block";
+    document.getElementById("selecttitle").style.display = "block";
+    playerchoice = "";
+    aichoice = "";
+
+
 
 }
 

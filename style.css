@@ -300,7 +300,7 @@
     height: 100px;
     position: fixed;
     top: 800px;
-    left: 300px;
+    left: 100px;
     background-color: rgb(0, 0, 0);
     border: 2px solid rgb(255, 255, 255);
     font-size: 40px;
@@ -318,4 +318,25 @@
 
 #end{
     display: none;
+}
+
+#reset{
+    width: 300px;
+    height: 100px;
+    position: fixed;
+    top: 800px;
+    left: 1500px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 40px;
+    font-family: pixel;
+    transition-duration: 0.4s;
+    color: rgb(255, 255, 255);
+}
+
+#reset:hover{
+    background-color: rgb(255, 0, 0);
+    border-color: red;
+    color: rgb(255, 255, 255);
+
 }
