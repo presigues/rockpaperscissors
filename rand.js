@@ -2,8 +2,7 @@
 aichoice;
 playerchoice;
 
-aiscore = 0;
-playerscore = 0;
+
    
    
 function start(){
@@ -36,6 +35,8 @@ function getRandomInt(min, max) {
 function theend(){
     document.getElementById("end").style.display = "block"
 }
+
+
 
 function match(){
 
