@@ -37,6 +37,7 @@ function match(){
 
             case aichoice="rock": // tie
                 console.log("tie");
+                document.getElementById("tie").style.opacity = 1
                 break;
             case aichoice="paper": // lose
                 console.log("AI wins");
@@ -48,32 +49,39 @@ function match(){
 
         case playerchoice="paper":
 
-            case aichoice="rock": // tie
+            case aichoice="paper": // tie
                 console.log("tie");
+                document.getElementById("tie").style.opacity = 1
                 break;
-            case aichoice="paper": // lose
+            case aichoice="scissors": // lose
                 console.log("AI wins");
                 break;
-            case aichoice="scissors": // win
+            case aichoice="rock": // win
                 console.log("Player wins"); 
                 break;
         break;
 
         case playerchoice="scissors":
 
-            case aichoice="rock": // tie
+            case aichoice="scissors": // tie
                 console.log("tie");
+                document.getElementById("tie").style.opacity = 1
+               
                 break;
-            case aichoice="paper": // lose
+            case aichoice="rock": // lose
                 console.log("AI wins");
                 break;
-            case aichoice="scissors": // win
+            case aichoice="paper": // win
                 console.log("Player wins"); 
                 break;
         break;
 
     }
 
+}
+
+function winner(){
+    
 }
 
 
@@ -96,6 +104,7 @@ start();
 match();
 
 }
+
 
    
 

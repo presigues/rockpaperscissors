@@ -264,3 +264,25 @@
     color: rgb(255, 255, 255);
 
 }
+
+#aiwin{
+    color:aliceblue;
+    font-family: pixel;
+    font-size: 60px;
+    opacity: 0;
+}
+
+#youwin{
+    color:aliceblue;
+    font-family: pixel;
+    font-size: 60px;
+    opacity: 0;
+}
+#tie{
+    color:aliceblue;
+    font-family: pixel;
+    font-size: 60px;
+    opacity: 0;
+}
+
+
