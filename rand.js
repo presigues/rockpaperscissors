@@ -43,69 +43,93 @@ function match(){
 
         if (playerchoice=="rock"){
 
+            document.getElementById("plrrock").style.opacity = "1";
+
             if (aichoice=="rock"){ // tie
                 console.log("tie");
                 document.getElementById("tie").style.opacity = "1";
                 document.getElementById("bottie").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("airock").style.opacity = "1";
                 }
             if(aichoice=="paper"){// lose
                 console.log("AI wins");
                 document.getElementById("aiwin").style.opacity = "1";
                 document.getElementById("botwin").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("aipaper").style.opacity = "1";
             } 
            if(aichoice=="scissors"){ // win
                 console.log("Player wins"); 
                 document.getElementById("youwin").style.opacity = "1";
                 document.getElementById("botlose").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("aiscissors").style.opacity = "1";
             }
 
         }
 
         if(playerchoice=="paper"){
 
+            document.getElementById("plrpaper").style.opacity = "1";
+
             if (aichoice=="rock"){ // tie
                 console.log("player wins");
                 document.getElementById("youwin").style.opacity = "1";
                 document.getElementById("botlose").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("airock").style.opacity = "1";
                 }
             if(aichoice=="paper"){// lose
                 console.log("tie");
                 document.getElementById("tie").style.opacity = "1";
                 document.getElementById("bottie").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("aipaper").style.opacity = "1";
             } 
            if(aichoice=="scissors"){ // win
                 console.log("ai wins"); 
                 document.getElementById("aiwin").style.opacity = "1";
                 document.getElementById("botwin").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("aiscissors").style.opacity = "1";
             }
     }
 
 
         if(playerchoice=="scissors"){
 
+            document.getElementById("plrscissors").style.opacity = "1";
+
             if (aichoice=="rock"){ // tie
                 console.log("ai wins");
                 document.getElementById("aiwin").style.opacity = "1";
                 document.getElementById("botwin").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("airock").style.opacity = "1";
                 }
             if(aichoice=="paper"){// lose
                 console.log("player wins");
                 document.getElementById("youwin").style.opacity = "1";
                 document.getElementById("botlose").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("aipaper").style.opacity = "1";
             } 
            if(aichoice=="scissors"){ // win
                 console.log("tie"); 
                 document.getElementById("tie").style.opacity = "1";
                 document.getElementById("bottie").style.opacity= "1";
                 document.getElementById("bot").style.opacity = "0";
+
+                document.getElementById("aiscissors").style.opacity = "1";
             }
         }
 
@@ -141,6 +165,14 @@ function reseting(){
     document.getElementById("botwin").style.opacity= "0";
     document.getElementById("bottie").style.opacity= "0";
     document.getElementById("bot").style.opacity = "1";
+
+    document.getElementById("plrrock").style.opacity = "0";
+    document.getElementById("plrpaper").style.opacity = "0";
+    document.getElementById("plrscissors").style.opacity = "0";
+
+    document.getElementById("airock").style.opacity = "0";
+    document.getElementById("aipaper").style.opacity = "0";
+    document.getElementById("aiscissors").style.opacity = "0";
 
 
 
