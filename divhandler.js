@@ -5,5 +5,8 @@ function openstart(){
     document.getElementById("title").style.display = "none";
     document.getElementById("mania").style.display = "none";
     document.getElementById("tutorial").style.display = "block"
+
+    
+    
 }
 

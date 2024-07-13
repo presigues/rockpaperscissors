@@ -108,3 +108,43 @@
     
 }
 
+#howto {
+    font-size: 80px;
+    font-family: pixel;
+    color: white;
+    position: fixed;
+    top: 170px;
+    left: 750px;
+    z-index: 1;
+}
+
+#explain{
+    font-size: 60px;
+    font-family: pixel;
+    color: white;
+    position: fixed;
+    top: 330px;
+    left: 430px;
+    z-index: 1;
+}
+
+#explain2{
+    font-size: 60px;
+    font-family: pixel;
+    color: white;
+    position: fixed;
+    top: 500px;
+    left: 200px;
+    z-index: 1;
+}
+
+#explain3{
+    font-size: 60px;
+    font-family: pixel;
+    color: rgb(255, 251, 0);
+    position: fixed;
+    top: 600px;
+    left: 770px;
+    z-index: 1;
+}
+
