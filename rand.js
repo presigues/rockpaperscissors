@@ -30,21 +30,70 @@ function getRandomInt(min, max) {
 
 }
 
+function match(){
+
+    switch(playerchoice, aichoice){
+        case playerchoice="rock":
+
+            case aichoice="rock": // tie
+                console.log("tie");
+                break;
+            case aichoice="paper": // lose
+                console.log("AI wins");
+                break;
+            case aichoice="scissors": // win
+                console.log("Player wins"); 
+                break;
+        break;
+
+        case playerchoice="paper":
+
+            case aichoice="rock": // tie
+                console.log("tie");
+                break;
+            case aichoice="paper": // lose
+                console.log("AI wins");
+                break;
+            case aichoice="scissors": // win
+                console.log("Player wins"); 
+                break;
+        break;
+
+        case playerchoice="scissors":
+
+            case aichoice="rock": // tie
+                console.log("tie");
+                break;
+            case aichoice="paper": // lose
+                console.log("AI wins");
+                break;
+            case aichoice="scissors": // win
+                console.log("Player wins"); 
+                break;
+        break;
+
+    }
+
+}
+
 
 function roc(){
 playerchoice="rock";
 console.log("player chose rock");
 start();
+match();
 }
 function pap() {
 playerchoice="paper";
 console.log("player chose paper"); 
 start(); 
+match();
 }
 function sci(){
 playerchoice="scissors";
 console.log("player chose scissors");
 start();
+match();
 
 }
 
